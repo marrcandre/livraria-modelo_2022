@@ -1,6 +1,7 @@
 from rest_framework.serializers import ModelSerializer
 
-from core.models import Categoria, Editora
+from core.models.categoria import Categoria
+from core.models.editora import Editora
 
 
 class CategoriaSerializer(ModelSerializer):
@@ -8,8 +9,8 @@ class CategoriaSerializer(ModelSerializer):
         model = Categoria
         fields = "__all__"
 
+
 class EditoraSerializer(ModelSerializer):
     class Meta:
         model = Editora
         fields = "__all__"
-        
