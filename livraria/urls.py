@@ -7,11 +7,11 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-from core.views import CategoriaViewSet, EditoraViewSet
+from core import views
 
 router = DefaultRouter()
-router.register(r"categorias", CategoriaViewSet)
-router.register(r"editoras", EditoraViewSet)
+router.register(r"categorias", views.CategoriaViewSet)
+router.register(r"editoras", views.EditoraViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
