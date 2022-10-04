@@ -9,9 +9,9 @@ from .editora import Editora
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=255)
-    ISBN = models.CharField(max_length=32)
-    quantidade = models.IntegerField()
-    preco = models.DecimalField(max_digits=7, decimal_places=2)
+    isbn = models.CharField(max_length=32, null=True, blank=True)
+    quantidade = models.IntegerField(default=1)
+    preco = models.DecimalField(max_digits=7, decimal_places=2, default=0)
     categoria = models.ForeignKey(
         Categoria, on_delete=models.PROTECT, related_name="livros"
     )

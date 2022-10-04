@@ -1,0 +1,225 @@
+[
+{
+    "model": "core.autor",
+    "pk": 1,
+    "fields": {
+        "nome": "Robert C. Martin",
+        "email": "unclebob@altabooks.com.br"
+    }
+},
+{
+    "model": "core.autor",
+    "pk": 2,
+    "fields": {
+        "nome": "J. R. R. Tolkien",
+        "email": "jrrtolkien@oxford.uk"
+    }
+},
+{
+    "model": "core.autor",
+    "pk": 3,
+    "fields": {
+        "nome": "C. S. Lewis",
+        "email": "cslewis@oxford.uk"
+    }
+},
+{
+    "model": "core.autor",
+    "pk": 4,
+    "fields": {
+        "nome": "Agatha Chistie",
+        "email": "achristie@lpm.com.br"
+    }
+},
+{
+    "model": "core.categoria",
+    "pk": 1,
+    "fields": {
+        "descricao": "Engenharia de Software"
+    }
+},
+{
+    "model": "core.categoria",
+    "pk": 2,
+    "fields": {
+        "descricao": "Fantasia"
+    }
+},
+{
+    "model": "core.categoria",
+    "pk": 3,
+    "fields": {
+        "descricao": "Policial"
+    }
+},
+{
+    "model": "core.editora",
+    "pk": 1,
+    "fields": {
+        "nome": "Alta Books",
+        "site": "http://altabooks.com.br"
+    }
+},
+{
+    "model": "core.editora",
+    "pk": 2,
+    "fields": {
+        "nome": "Record",
+        "site": "http://record.com.br"
+    }
+},
+{
+    "model": "core.editora",
+    "pk": 3,
+    "fields": {
+        "nome": "Martins Fontes",
+        "site": "http://martinsfontes.com.br"
+    }
+},
+{
+    "model": "core.editora",
+    "pk": 4,
+    "fields": {
+        "nome": "LPM",
+        "site": "http://lpm.com.br"
+    }
+},
+{
+    "model": "core.livro",
+    "pk": 1,
+    "fields": {
+        "titulo": "O Código Limpo",
+        "ISBN": "978-85-7608-6",
+        "quantidade": 34,
+        "preco": "90.00",
+        "categoria": 1,
+        "editora": 1,
+        "capa": 1,
+        "autores": [
+            1
+        ]
+    }
+},
+{
+    "model": "core.livro",
+    "pk": 2,
+    "fields": {
+        "titulo": "O Codificador Limpo",
+        "ISBN": "978-85-7608-6",
+        "quantidade": 12,
+        "preco": "12.00",
+        "categoria": 1,
+        "editora": 1,
+        "capa": null,
+        "autores": [
+            1
+        ]
+    }
+},
+{
+    "model": "core.livro",
+    "pk": 3,
+    "fields": {
+        "titulo": "As Crônicas de Nárnia",
+        "ISBN": "978-85-7608-6",
+        "quantidade": 34,
+        "preco": "45.00",
+        "categoria": 2,
+        "editora": 3,
+        "capa": null,
+        "autores": [
+            3
+        ]
+    }
+},
+{
+    "model": "core.livro",
+    "pk": 4,
+    "fields": {
+        "titulo": "O Senhor dos Anéis",
+        "ISBN": "978-85-7608-6",
+        "quantidade": 657,
+        "preco": "57.00",
+        "categoria": 2,
+        "editora": 3,
+        "capa": null,
+        "autores": [
+            2
+        ]
+    }
+},
+{
+    "model": "core.livro",
+    "pk": 5,
+    "fields": {
+        "titulo": "O Hobbit",
+        "ISBN": "988977676234",
+        "quantidade": 4,
+        "preco": "45.00",
+        "categoria": 2,
+        "editora": 3,
+        "capa": null,
+        "autores": [
+            2
+        ]
+    }
+},
+{
+    "model": "core.livro",
+    "pk": 6,
+    "fields": {
+        "titulo": "Os crimes do ABC",
+        "ISBN": "53456457",
+        "quantidade": 6,
+        "preco": "67.00",
+        "categoria": 3,
+        "editora": 4,
+        "capa": null,
+        "autores": [
+            4
+        ]
+    }
+},
+{
+    "model": "core.usuario",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$ho8E4gMoGI5ZLcdzrNbDrx$Sv5olhGNiaf5DQZyIObHVulv0C4hzuLKYSDB38QvXVY=",
+        "last_login": "2022-09-16T15:59:07.393Z",
+        "is_superuser": true,
+        "username": "marco",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-09-15T17:47:34.939Z",
+        "cpf": "",
+        "telefone": null,
+        "data_nascimento": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "core.usuario",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$i9mQUcKQUFk7OyWvVFzjX1$tU3QU+cj90RBk6zoanKyfmG0bhwdpNdH4AaTqOBADmY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "joaquim",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-09-15T17:53:22.191Z",
+        "cpf": null,
+        "telefone": null,
+        "data_nascimento": null,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
