@@ -257,14 +257,6 @@
 },
 {
   "model": "core.autor",
-  "pk": 33,
-  "fields": {
-    "nome": "Philip K Dick",
-    "email": null
-  }
-},
-{
-  "model": "core.autor",
   "pk": 34,
   "fields": {
     "nome": "Douglas Adams",
@@ -523,7 +515,7 @@
   "model": "core.autor",
   "pk": 67,
   "fields": {
-    "nome": "neil gaiman",
+    "nome": "Neil Gaiman",
     "email": "realneil@gmail.com"
   }
 },
@@ -541,6 +533,174 @@
   "fields": {
     "nome": "Emily Dickinson",
     "email": "emilydickinson@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 70,
+  "fields": {
+    "nome": "Sally Rooney",
+    "email": "sally.rooney@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 72,
+  "fields": {
+    "nome": "Raphael Montes",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 73,
+  "fields": {
+    "nome": "Josh Goldberg",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 74,
+  "fields": {
+    "nome": "Clóvis de Barros Filho",
+    "email": "clovis.barros@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 75,
+  "fields": {
+    "nome": "Stephen King",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 76,
+  "fields": {
+    "nome": "Leigh Bardugo",
+    "email": "leigh.bardugo@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 77,
+  "fields": {
+    "nome": "Carina Rissi",
+    "email": "carinarissi@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 78,
+  "fields": {
+    "nome": "Dan Brown",
+    "email": "danbrown@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 79,
+  "fields": {
+    "nome": "Joel Dicker",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 80,
+  "fields": {
+    "nome": "Casey McQuiston",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 81,
+  "fields": {
+    "nome": "Machado de Assis",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 82,
+  "fields": {
+    "nome": "Jane Austen",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 83,
+  "fields": {
+    "nome": "Euclides da Cunha",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 84,
+  "fields": {
+    "nome": "Fernando Morais",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 85,
+  "fields": {
+    "nome": "J. D. Salinger",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 86,
+  "fields": {
+    "nome": "Editora do Brasil",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 87,
+  "fields": {
+    "nome": "Ned Vizzini",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 89,
+  "fields": {
+    "nome": "Ronan Wielewski",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 90,
+  "fields": {
+    "nome": "Friedrich Engels",
+    "email": "comunistocomgostolula2023@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 91,
+  "fields": {
+    "nome": "Lygia Bojunga",
+    "email": null
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 93,
+  "fields": {
+    "nome": "Victoria Aveyard",
+    "email": null
   }
 },
 {
@@ -733,6 +893,69 @@
   }
 },
 {
+  "model": "core.categoria",
+  "pk": 30,
+  "fields": {
+    "descricao": "Suspense"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 31,
+  "fields": {
+    "descricao": "Drama"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 32,
+  "fields": {
+    "descricao": "Romance"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 33,
+  "fields": {
+    "descricao": "Romance"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 34,
+  "fields": {
+    "descricao": "Autoajuda"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 35,
+  "fields": {
+    "descricao": "não ficção"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 36,
+  "fields": {
+    "descricao": "Romance/Drama"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 37,
+  "fields": {
+    "descricao": "Comédia romantica"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 38,
+  "fields": {
+    "descricao": "Infanto-Juvenil"
+  }
+},
+{
   "model": "core.editora",
   "pk": 1,
   "fields": {
@@ -754,14 +977,6 @@
   "fields": {
     "nome": "Martins Fontes",
     "site": "http://martinsfontes.com.br"
-  }
-},
-{
-  "model": "core.editora",
-  "pk": 4,
-  "fields": {
-    "nome": "LPM",
-    "site": "http://lpm.com.br"
   }
 },
 {
@@ -857,14 +1072,6 @@
   "pk": 16,
   "fields": {
     "nome": "Aleph",
-    "site": null
-  }
-},
-{
-  "model": "core.editora",
-  "pk": 17,
-  "fields": {
-    "nome": "Arqueiro",
     "site": null
   }
 },
@@ -1069,6 +1276,78 @@
   }
 },
 {
+  "model": "core.editora",
+  "pk": 43,
+  "fields": {
+    "nome": "Nova Fronteira",
+    "site": null
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 45,
+  "fields": {
+    "nome": "Dark Side",
+    "site": null
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 46,
+  "fields": {
+    "nome": "L&PM",
+    "site": null
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 49,
+  "fields": {
+    "nome": "Citadel",
+    "site": "https://www.citadel.com.br"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 50,
+  "fields": {
+    "nome": "Principis",
+    "site": null
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 51,
+  "fields": {
+    "nome": "Penguin",
+    "site": null
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 52,
+  "fields": {
+    "nome": "Todavia",
+    "site": "https://todavialivros.com.br/"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 53,
+  "fields": {
+    "nome": "Editora Brasil",
+    "site": null
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 54,
+  "fields": {
+    "nome": "Casa Lygia Bojunga",
+    "site": null
+  }
+},
+{
   "model": "core.livro",
   "pk": 1,
   "fields": {
@@ -1152,12 +1431,12 @@
   "model": "core.livro",
   "pk": 6,
   "fields": {
-    "titulo": "Os crimes do ABC",
+    "titulo": "Morte no Nilo",
     "isbn": null,
     "quantidade": 6,
     "preco": "67.00",
     "categoria": 3,
-    "editora": 4,
+    "editora": 46,
     "capa": null,
     "autores": [
       4
@@ -1253,7 +1532,7 @@
     "quantidade": 36,
     "preco": "52.00",
     "categoria": 9,
-    "editora": 4,
+    "editora": 46,
     "capa": null,
     "autores": [
       9
@@ -1328,7 +1607,7 @@
   "model": "core.livro",
   "pk": 17,
   "fields": {
-    "titulo": "Androides sonham com ovelhas elétricas?",
+    "titulo": "Androides Sonham com Ovelhas Elétricas?",
     "isbn": null,
     "quantidade": 41,
     "preco": "39.99",
@@ -1360,7 +1639,7 @@
   "model": "core.livro",
   "pk": 19,
   "fields": {
-    "titulo": "Percy Jackson e a batalha do labirinto",
+    "titulo": "Percy Jackson e a Batalha do Labirinto",
     "isbn": "978-8580575422",
     "quantidade": 10,
     "preco": "38.00",
@@ -1376,7 +1655,7 @@
   "model": "core.livro",
   "pk": 20,
   "fields": {
-    "titulo": "Percy Jackson e o Ultimo Olimpiano",
+    "titulo": "Percy Jackson e o Último Olimpiano",
     "isbn": "978-8580575439",
     "quantidade": 15,
     "preco": "30.00",
@@ -1440,7 +1719,7 @@
   "model": "core.livro",
   "pk": 24,
   "fields": {
-    "titulo": "Assassin’s Creed: A cruzada secreta",
+    "titulo": "Assassin’s Creed: A Cruzada Secreta",
     "isbn": "978-8501098344",
     "quantidade": 28,
     "preco": "21.00",
@@ -1656,7 +1935,7 @@
   "model": "core.livro",
   "pk": 37,
   "fields": {
-    "titulo": "O Ultimo Reino",
+    "titulo": "O Último Reino",
     "isbn": null,
     "quantidade": 30,
     "preco": "37.79",
@@ -1736,7 +2015,7 @@
   "model": "core.livro",
   "pk": 42,
   "fields": {
-    "titulo": "O rei do inverno (Vol. 1 As Crônicas de Artur)",
+    "titulo": "O Rei do Inverno (Vol. 1 As Crônicas de Artur)",
     "isbn": null,
     "quantidade": 30,
     "preco": "32.45",
@@ -1752,7 +2031,7 @@
   "model": "core.livro",
   "pk": 43,
   "fields": {
-    "titulo": "O inimigo de Deus (Vol. 2 As Crônicas de Artur)",
+    "titulo": "O Inimigo de Deus (Vol. 2 As Crônicas de Artur)",
     "isbn": null,
     "quantidade": 20,
     "preco": "40.41",
@@ -1784,7 +2063,7 @@
   "model": "core.livro",
   "pk": 45,
   "fields": {
-    "titulo": "Turma da Mônica - Vamos aprender o alfabeto",
+    "titulo": "Turma da Mônica - Vamos Aprender o Alfabeto",
     "isbn": "978-8538076209",
     "quantidade": 94,
     "preco": "2.50",
@@ -1800,7 +2079,7 @@
   "model": "core.livro",
   "pk": 46,
   "fields": {
-    "titulo": "Blade Runner: Androides sonham com ovelhas elétricas?",
+    "titulo": "Blade Runner: Androides Sonham com Ovelhas Elétricas?",
     "isbn": null,
     "quantidade": 500,
     "preco": "28.95",
@@ -1808,7 +2087,7 @@
     "editora": 16,
     "capa": null,
     "autores": [
-      33
+      12
     ]
   }
 },
@@ -1816,12 +2095,12 @@
   "model": "core.livro",
   "pk": 47,
   "fields": {
-    "titulo": "O guia definitivo do mochileiro das galáxias",
+    "titulo": "O Guia Definitivo do Mochileiro das Galáxias",
     "isbn": null,
     "quantidade": 42,
     "preco": "60.90",
     "categoria": 11,
-    "editora": 17,
+    "editora": 9,
     "capa": null,
     "autores": [
       34
@@ -1832,7 +2111,7 @@
   "model": "core.livro",
   "pk": 48,
   "fields": {
-    "titulo": "Turma da Mônica - Cuidados do dia a dia",
+    "titulo": "Turma da Mônica - Cuidados do Dia a Dia",
     "isbn": "978-8538068938",
     "quantidade": 37,
     "preco": "2.00",
@@ -1848,7 +2127,7 @@
   "model": "core.livro",
   "pk": 49,
   "fields": {
-    "titulo": "Turma da Mônica - Vamos aprender os traços",
+    "titulo": "Turma da Mônica - Vamos Aprender os Traços",
     "isbn": "978-8538076223",
     "quantidade": 79,
     "preco": "2.60",
@@ -1864,7 +2143,7 @@
   "model": "core.livro",
   "pk": 50,
   "fields": {
-    "titulo": "As aventuras de Pedro",
+    "titulo": "As Aventuras de Pedro",
     "isbn": "8497653124",
     "quantidade": 1,
     "preco": "89.99",
@@ -1912,7 +2191,7 @@
   "model": "core.livro",
   "pk": 53,
   "fields": {
-    "titulo": "Viagem ao mar",
+    "titulo": "Viagem ao Mar",
     "isbn": "798421359",
     "quantidade": 1,
     "preco": "199.45",
@@ -2008,7 +2287,7 @@
   "model": "core.livro",
   "pk": 59,
   "fields": {
-    "titulo": "Dr Sócrates o ídolo Corinthiano",
+    "titulo": "Dr. Sócrates o Ídolo Corinthiano",
     "isbn": "7645123482",
     "quantidade": 1,
     "preco": "300.00",
@@ -2024,7 +2303,7 @@
   "model": "core.livro",
   "pk": 60,
   "fields": {
-    "titulo": "A Mascara Da Morte Vermelha",
+    "titulo": "A Mascara da Morte Vermelha",
     "isbn": "8506066093",
     "quantidade": 16,
     "preco": "51.00",
@@ -2152,7 +2431,7 @@
   "model": "core.livro",
   "pk": 68,
   "fields": {
-    "titulo": "Cartas de um diabo a seu aprendiz",
+    "titulo": "Cartas de um Diabo a seu Aprendiz",
     "isbn": "857860184X",
     "quantidade": 13,
     "preco": "23.87",
@@ -2200,7 +2479,7 @@
   "model": "core.livro",
   "pk": 71,
   "fields": {
-    "titulo": "A abolição do homem",
+    "titulo": "A Abolição do Homem",
     "isbn": "978-8578601898",
     "quantidade": 15,
     "preco": "29.00",
@@ -2248,7 +2527,7 @@
   "model": "core.livro",
   "pk": 74,
   "fields": {
-    "titulo": "A metamorfose",
+    "titulo": "A Metamorfose",
     "isbn": "8542217187",
     "quantidade": 24,
     "preco": "25.90",
@@ -2280,7 +2559,7 @@
   "model": "core.livro",
   "pk": 76,
   "fields": {
-    "titulo": "Cabeça fria, Coração quente",
+    "titulo": "Cabeça Fria, Coração Quente",
     "isbn": "7985641231",
     "quantidade": 1,
     "preco": "65.00",
@@ -2376,7 +2655,7 @@
   "model": "core.livro",
   "pk": 82,
   "fields": {
-    "titulo": "A marca da vitória: A autobiografia do criador da Nike",
+    "titulo": "A Marca da Vitória: A Autobiografia do Criador da Nike",
     "isbn": "8543104467",
     "quantidade": 10,
     "preco": "30.00",
@@ -2392,7 +2671,7 @@
   "model": "core.livro",
   "pk": 83,
   "fields": {
-    "titulo": "Admirável mundo novo",
+    "titulo": "Admirável Mundo Novo",
     "isbn": "8525056006",
     "quantidade": 15,
     "preco": "28.78",
@@ -2472,7 +2751,7 @@
   "model": "core.livro",
   "pk": 88,
   "fields": {
-    "titulo": "Dedique-se de coração: A história de como a Starbucks se tornou uma grande empresa de xícara em xícara",
+    "titulo": "Dedique-se de coração: A História de como a Starbucks se Tornou uma Grande Empresa de Xícara em Xícara",
     "isbn": "6580435194",
     "quantidade": 21,
     "preco": "40.00",
@@ -2528,7 +2807,7 @@
     "editora": 16,
     "capa": null,
     "autores": [
-      33
+      12
     ]
   }
 },
@@ -2536,7 +2815,7 @@
   "model": "core.livro",
   "pk": 92,
   "fields": {
-    "titulo": "Medo Clássico: Sinta o medo clássico",
+    "titulo": "Medo Clássico: Sinta o Medo Clássico",
     "isbn": "978-8594540249",
     "quantidade": 11,
     "preco": "74.90",
@@ -2552,7 +2831,7 @@
   "model": "core.livro",
   "pk": 93,
   "fields": {
-    "titulo": "O darksider original mais vivo do que nunca",
+    "titulo": "O Darksider Original Mais Vivo do que Nunca",
     "isbn": "978-8594541208",
     "quantidade": 16,
     "preco": "69.90",
@@ -2648,7 +2927,7 @@
   "model": "core.livro",
   "pk": 99,
   "fields": {
-    "titulo": "O milagre da manhã",
+    "titulo": "O Milagre da Manhã",
     "isbn": null,
     "quantidade": 1,
     "preco": "39.30",
@@ -2680,7 +2959,7 @@
   "model": "core.livro",
   "pk": 101,
   "fields": {
-    "titulo": "História da sexualidade: A vontade do saber (Vol. 1): A vontade de saber",
+    "titulo": "História da Sexualidade: A Vontade do Saber (Vol. 1): A Vontade de Saber",
     "isbn": "978-8577534500",
     "quantidade": 1,
     "preco": "36.87",
@@ -2696,7 +2975,7 @@
   "model": "core.livro",
   "pk": 102,
   "fields": {
-    "titulo": "História da sexualidade: O uso dos prazeres (Vol. 2)",
+    "titulo": "História da Sexualidade: O Uso dos Prazeres (Vol. 2)",
     "isbn": "978-8577534517",
     "quantidade": 1,
     "preco": "52.42",
@@ -2712,7 +2991,7 @@
   "model": "core.livro",
   "pk": 103,
   "fields": {
-    "titulo": "História da sexualidade: O cuidado de si (Vol. 3)",
+    "titulo": "História da Sexualidade: O Cuidado de Si (Vol. 3)",
     "isbn": "978-8577534524",
     "quantidade": 1,
     "preco": "52.43",
@@ -2728,7 +3007,7 @@
   "model": "core.livro",
   "pk": 104,
   "fields": {
-    "titulo": "Em busca de mim",
+    "titulo": "Em Busca de Mim",
     "isbn": null,
     "quantidade": 1,
     "preco": "39.30",
@@ -2744,7 +3023,7 @@
   "model": "core.livro",
   "pk": 105,
   "fields": {
-    "titulo": "Brasil: nunca mais",
+    "titulo": "Brasil: Nunca Mais",
     "isbn": "8532600301",
     "quantidade": 32,
     "preco": "60.00",
@@ -2760,7 +3039,7 @@
   "model": "core.livro",
   "pk": 106,
   "fields": {
-    "titulo": "A fúria dos reis",
+    "titulo": "A Fúria dos Reis",
     "isbn": "9781984821157",
     "quantidade": 4,
     "preco": "70.00",
@@ -2808,7 +3087,7 @@
   "model": "core.livro",
   "pk": 109,
   "fields": {
-    "titulo": "Contos de imaginação e mistério",
+    "titulo": "Contos de Imaginação e Mistério",
     "isbn": "8564406357",
     "quantidade": 16,
     "preco": "80.00",
@@ -2824,7 +3103,7 @@
   "model": "core.livro",
   "pk": 110,
   "fields": {
-    "titulo": "A incrível viagem das plantas",
+    "titulo": "A Incrível Viagem das Plantas",
     "isbn": null,
     "quantidade": 1,
     "preco": "44.50",
@@ -2840,7 +3119,7 @@
   "model": "core.livro",
   "pk": 111,
   "fields": {
-    "titulo": "Lugar nenhum",
+    "titulo": "Lugar Nenhum",
     "isbn": "4567689",
     "quantidade": 1,
     "preco": "30.00",
@@ -2856,7 +3135,7 @@
   "model": "core.livro",
   "pk": 112,
   "fields": {
-    "titulo": "O pequeno livro do amor",
+    "titulo": "O Pequeno Livro do Amor",
     "isbn": null,
     "quantidade": 1,
     "preco": "31.92",
@@ -2901,11 +3180,539 @@
   }
 },
 {
+  "model": "core.livro",
+  "pk": 115,
+  "fields": {
+    "titulo": "É Fácil Matar",
+    "isbn": "8525415723",
+    "quantidade": 7,
+    "preco": "22.50",
+    "categoria": 30,
+    "editora": 43,
+    "capa": null,
+    "autores": [
+      4
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 116,
+  "fields": {
+    "titulo": "Pessoas Normais",
+    "isbn": null,
+    "quantidade": 5,
+    "preco": "29.90",
+    "categoria": 31,
+    "editora": 5,
+    "capa": null,
+    "autores": [
+      70
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 117,
+  "fields": {
+    "titulo": "O Capital: crítica da Economia Política",
+    "isbn": "12151321231",
+    "quantidade": 20,
+    "preco": "0.00",
+    "categoria": 10,
+    "editora": 34,
+    "capa": null,
+    "autores": [
+      60
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 118,
+  "fields": {
+    "titulo": "O Vilarejo",
+    "isbn": null,
+    "quantidade": 10,
+    "preco": "25.99",
+    "categoria": 30,
+    "editora": 6,
+    "capa": null,
+    "autores": [
+      72
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 119,
+  "fields": {
+    "titulo": "Aprendendo TypeScript",
+    "isbn": "978-65-86057-99-7",
+    "quantidade": 1,
+    "preco": "97.00",
+    "categoria": 16,
+    "editora": 18,
+    "capa": null,
+    "autores": [
+      73
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 120,
+  "fields": {
+    "titulo": "Os Crimes ABC",
+    "isbn": "9788525419378",
+    "quantidade": 20,
+    "preco": "30.51",
+    "categoria": 30,
+    "editora": 46,
+    "capa": null,
+    "autores": [
+      4
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 122,
+  "fields": {
+    "titulo": "Joyland",
+    "isbn": "8581052983",
+    "quantidade": 52,
+    "preco": "27.99",
+    "categoria": 30,
+    "editora": 6,
+    "capa": null,
+    "autores": [
+      75
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 123,
+  "fields": {
+    "titulo": "Sombra e Ossos",
+    "isbn": null,
+    "quantidade": 15,
+    "preco": "39.90",
+    "categoria": 2,
+    "editora": 25,
+    "capa": null,
+    "autores": [
+      76
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 124,
+  "fields": {
+    "titulo": "Sol e Tormenta",
+    "isbn": null,
+    "quantidade": 2,
+    "preco": "35.35",
+    "categoria": 2,
+    "editora": 25,
+    "capa": null,
+    "autores": [
+      76
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 125,
+  "fields": {
+    "titulo": "No Mundo da Luna",
+    "isbn": "978-8576863021",
+    "quantidade": 1,
+    "preco": "43.13",
+    "categoria": 32,
+    "editora": 2,
+    "capa": null,
+    "autores": [
+      77
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 126,
+  "fields": {
+    "titulo": "Ruína e Ascensão",
+    "isbn": null,
+    "quantidade": 3,
+    "preco": "32.90",
+    "categoria": 2,
+    "editora": 25,
+    "capa": null,
+    "autores": [
+      76
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 127,
+  "fields": {
+    "titulo": "O Código Da Vinci",
+    "isbn": "9780739339787",
+    "quantidade": 1,
+    "preco": "20.00",
+    "categoria": 33,
+    "editora": 9,
+    "capa": null,
+    "autores": [
+      78
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 128,
+  "fields": {
+    "titulo": "O Livro dos Baltimore",
+    "isbn": "269648948948",
+    "quantidade": 45,
+    "preco": "31.51",
+    "categoria": 30,
+    "editora": 7,
+    "capa": null,
+    "autores": [
+      79
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 129,
+  "fields": {
+    "titulo": "O Caso Alaska Sanders",
+    "isbn": null,
+    "quantidade": 18,
+    "preco": "55.90",
+    "categoria": 30,
+    "editora": 7,
+    "capa": null,
+    "autores": [
+      79
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 130,
+  "fields": {
+    "titulo": "Vermalho, Branco e Sangue azul",
+    "isbn": "8555340942",
+    "quantidade": 55,
+    "preco": "34.93",
+    "categoria": 32,
+    "editora": 26,
+    "capa": null,
+    "autores": [
+      80
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 131,
+  "fields": {
+    "titulo": "Dom Casmurro",
+    "isbn": "978-8594318602",
+    "quantidade": 1,
+    "preco": "12.00",
+    "categoria": 8,
+    "editora": 50,
+    "capa": null,
+    "autores": [
+      81
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 132,
+  "fields": {
+    "titulo": "Orgulho e Preconceito",
+    "isbn": null,
+    "quantidade": 68,
+    "preco": "57.00",
+    "categoria": 32,
+    "editora": 51,
+    "capa": null,
+    "autores": [
+      82
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 133,
+  "fields": {
+    "titulo": "O Alienista",
+    "isbn": "978-6550970376",
+    "quantidade": 1,
+    "preco": "11.00",
+    "categoria": 8,
+    "editora": 50,
+    "capa": null,
+    "autores": [
+      81
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 134,
+  "fields": {
+    "titulo": "Em Busca de Nós Mesmos",
+    "isbn": "978-8568014455",
+    "quantidade": 1,
+    "preco": "23.77",
+    "categoria": 34,
+    "editora": 49,
+    "capa": null,
+    "autores": [
+      74
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 135,
+  "fields": {
+    "titulo": "Memórias Póstumas de Brás Cubas",
+    "isbn": "978-8594318619",
+    "quantidade": 1,
+    "preco": "12.00",
+    "categoria": 8,
+    "editora": 50,
+    "capa": null,
+    "autores": [
+      81
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 136,
+  "fields": {
+    "titulo": "Lula, volume 1: Biografia",
+    "isbn": "6559212920",
+    "quantidade": 13,
+    "preco": "20.23",
+    "categoria": 21,
+    "editora": 5,
+    "capa": null,
+    "autores": [
+      84
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 137,
+  "fields": {
+    "titulo": "Os sertões",
+    "isbn": "978-6550970390",
+    "quantidade": 1,
+    "preco": "16.00",
+    "categoria": 8,
+    "editora": 50,
+    "capa": null,
+    "autores": [
+      83
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 138,
+  "fields": {
+    "titulo": "Quincas Borba",
+    "isbn": "978-8594318855",
+    "quantidade": 1,
+    "preco": "13.00",
+    "categoria": 8,
+    "editora": 50,
+    "capa": null,
+    "autores": [
+      81
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 139,
+  "fields": {
+    "titulo": "Apanhador no Campo de Centeio",
+    "isbn": null,
+    "quantidade": 1,
+    "preco": "38.95",
+    "categoria": 32,
+    "editora": 52,
+    "capa": null,
+    "autores": [
+      85
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 140,
+  "fields": {
+    "titulo": "Uma História Meio que Engraçada",
+    "isbn": null,
+    "quantidade": 98,
+    "preco": "32.90",
+    "categoria": 36,
+    "editora": 7,
+    "capa": null,
+    "autores": [
+      87
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 141,
+  "fields": {
+    "titulo": "Lula: O Brasil FELIZ de novo!",
+    "isbn": "5478553358576",
+    "quantidade": 13,
+    "preco": "20.23",
+    "categoria": 34,
+    "editora": 53,
+    "capa": null,
+    "autores": [
+      89
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 142,
+  "fields": {
+    "titulo": "Manifesto Comunista",
+    "isbn": null,
+    "quantidade": 13,
+    "preco": "0.00",
+    "categoria": 35,
+    "editora": 33,
+    "capa": null,
+    "autores": [
+      90
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 144,
+  "fields": {
+    "titulo": "O Abraço",
+    "isbn": null,
+    "quantidade": 20,
+    "preco": "19.90",
+    "categoria": 38,
+    "editora": 54,
+    "capa": null,
+    "autores": [
+      91
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 145,
+  "fields": {
+    "titulo": "Sapato de Salto",
+    "isbn": null,
+    "quantidade": 30,
+    "preco": "19.90",
+    "categoria": 38,
+    "editora": 54,
+    "capa": null,
+    "autores": [
+      91
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 146,
+  "fields": {
+    "titulo": "A Casa da Madrinha",
+    "isbn": null,
+    "quantidade": 20,
+    "preco": "29.90",
+    "categoria": 38,
+    "editora": 54,
+    "capa": null,
+    "autores": [
+      91
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 147,
+  "fields": {
+    "titulo": "Tchau",
+    "isbn": null,
+    "quantidade": 20,
+    "preco": "20.00",
+    "categoria": 38,
+    "editora": 54,
+    "capa": null,
+    "autores": [
+      91
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 149,
+  "fields": {
+    "titulo": "A Rainha Vermelha",
+    "isbn": null,
+    "quantidade": 10,
+    "preco": "40.00",
+    "categoria": 2,
+    "editora": 26,
+    "capa": null,
+    "autores": [
+      93
+    ]
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 150,
+  "fields": {
+    "titulo": "A Bolsa Amarela",
+    "isbn": null,
+    "quantidade": 30,
+    "preco": "10.00",
+    "categoria": 38,
+    "editora": 54,
+    "capa": null,
+    "autores": [
+      91
+    ]
+  }
+},
+{
   "model": "core.usuario",
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$390000$ho8E4gMoGI5ZLcdzrNbDrx$Sv5olhGNiaf5DQZyIObHVulv0C4hzuLKYSDB38QvXVY=",
-    "last_login": "2022-10-06T13:52:48.542Z",
+    "last_login": "2022-10-07T12:23:14.918Z",
     "is_superuser": true,
     "username": "marco",
     "first_name": "",
