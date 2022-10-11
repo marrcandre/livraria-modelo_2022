@@ -5,17 +5,16 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Load operating system environment variables and then prepare to use them
+# Carrega as variáveis de ambiente do sistema operacional e as prepara para usá-las
 env = environ.Env()
-environ.Env.read_env((os.path.join(BASE_DIR, '.env')))
+environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY")
-
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
+ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(",")
+DATABASES = {"default": env.db()}
 
-ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(" ")
+print(ALLOWED_HOSTS)
 
 # Application definition
 INSTALLED_APPS = [
@@ -65,11 +64,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "livraria.wsgi.application"
 
-# Database
-DATABASES = {
-    "default": env.db()
-}
-
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -94,15 +88,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = "static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
-# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
+# Configurações do CORS Headers
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Para ativar as permissoes de acesso e autenticacao, descomente as linhas abaixo
@@ -116,6 +107,7 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
+# Spectacular settings
 SPECTACULAR_SETTINGS = {
     "TITLE": "Livraria API",
     "DESCRIPTION": "API para gerenciamento de livraria, incluindo endpoints e documentação.",
@@ -124,6 +116,7 @@ SPECTACULAR_SETTINGS = {
 
 AUTH_USER_MODEL = "core.Usuario"
 
+# Configurações do app media
 MEDIA_URL = "http://localhost:8000/media/"
 MEDIA_ENDPOINT = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media_files/")
