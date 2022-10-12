@@ -66,10 +66,3 @@ class UsuarioAdmin(UserAdmin):
         ),
         (_("Important dates"), {"fields": ("last_login", "date_joined")}),
     )
-
-
-# admin.site.register(Autor)
-# admin.site.register(Categoria)
-# admin.site.register(Editora)
-# admin.site.register(Livro)
-# admin.site.register(Usuario, UsuarioAdmin)
