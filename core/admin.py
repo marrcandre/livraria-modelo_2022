@@ -1,40 +1,54 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
+from faker import Faker
 
 from core.models import Autor, Categoria, Editora, Livro, Usuario
 
+
 @admin.register(Autor)
 class AutorAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'email')
-    search_fields = ('nome', 'email')
-    list_filter = ('nome',)
-    ordering = ('nome', 'email')
+    list_display = ("nome", "email")
+    search_fields = ("nome", "email")
+    list_filter = ("nome",)
+    ordering = ("nome", "email")
+    actions = ['gerar_autores']
+
+    def gerar_autores(self, request, queryset):
+        faker = Faker()
+        for _ in range(10):
+            Autor.objects.create(
+                nome=faker.name(),
+                email=faker.email(),
+            )
+        self.message_user(request, 'Autores gerados com sucesso!')
+    gerar_autores.short_description = 'Gerar autores'
 
 @admin.register(Categoria)
 class CategoriaAdmin(admin.ModelAdmin):
-    list_display = ('descricao',)
-    search_fields = ('descricao',)
-    list_filter = ('descricao',)
-    ordering = ('descricao',)
+    list_display = ("descricao",)
+    search_fields = ("descricao",)
+    list_filter = ("descricao",)
+    ordering = ("descricao",)
+
 
 @admin.register(Editora)
 class EditoraAdmin(admin.ModelAdmin):
-    list_display = ('nome',)
-    search_fields = ('nome',)
-    list_filter = ('nome',)
-    ordering = ('nome',)
+    list_display = ("nome",)
+    search_fields = ("nome",)
+    list_filter = ("nome",)
+    ordering = ("nome",)
 
 
 @admin.register(Livro)
 class LivroAdmin(admin.ModelAdmin):
-    list_display = ('titulo', 'editora', 'categoria')
-    search_fields = ('titulo', 'editora__nome', 'categoria__descricao')
-    list_filter = ('editora', 'categoria')
-    ordering = ('titulo', 'editora', 'categoria')
+    list_display = ("titulo", "editora", "categoria")
+    search_fields = ("titulo", "editora__nome", "categoria__descricao")
+    list_filter = ("editora", "categoria")
+    ordering = ("titulo", "editora", "categoria")
     list_per_page = 25
-    
-    
+
+
 @admin.register(Usuario)
 class UsuarioAdmin(UserAdmin):
     fieldsets = (

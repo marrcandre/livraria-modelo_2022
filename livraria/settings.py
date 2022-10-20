@@ -16,6 +16,18 @@ DATABASES = {"default": env.db()}
 
 print(ALLOWED_HOSTS)
 
+# Carregamento das variáveis de ambiente do sistema operacional
+SECRET_KEY = "django-insecure-svwd1#a+hes8us=*u3s@h*e25b79=9cwv!!-fp%^qk_k39h-1m"
+DEBUG = True
+ALLOWED_HOSTS = ["*"]
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
+
+
 # Application definition
 INSTALLED_APPS = [
     "django.contrib.admin",
