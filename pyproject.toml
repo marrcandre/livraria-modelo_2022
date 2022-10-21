@@ -17,7 +17,6 @@ Pillow = "^9.2.0"
 drf-spectacular = "^0.24.0"
 django-environ = "^0.9.0"
 libmagic = "^1.0"
-psycopg2 = "^2.9.4"
 Faker = "^15.1.1"
 
 [tool.poetry.dev-dependencies]
