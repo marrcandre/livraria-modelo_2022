@@ -21,6 +21,11 @@ DEBUG = env("DEBUG")
 ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(",")
 DATABASES = {"default": env.db()}
 
+print("SECRET_KEY: ", SECRET_KEY)
+print("DEBUG: ", DEBUG)
+print("ALLOWED_HOSTS: ", ALLOWED_HOSTS)
+print("DATABASES: ", DATABASES)
+
 # Application definition
 INSTALLED_APPS = [
     "django.contrib.admin",
