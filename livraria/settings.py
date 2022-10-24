@@ -14,6 +14,13 @@ DEBUG = env("DEBUG")
 ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(",")
 DATABASES = {"default": env.db()}
 
+if os.getenv("PYTHONANYWHERE_DOMAIN"):
+    print("PYTHONANYWHERE_DOMAIN: ", env("PYTHONANYWHERE_DOMAIN"))
+    environ.Env.read_env(os.path.join("~/", ".env"))
+else:
+    print("PYTHONANYWHERE_DOMAIN: ", None)
+    environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
+
 # Application definition
 INSTALLED_APPS = [
     "django.contrib.admin",
