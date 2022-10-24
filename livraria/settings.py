@@ -11,7 +11,7 @@ environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
 
 if os.getenv("PYTHONANYWHERE_DOMAIN"):
     print("PYTHONANYWHERE_DOMAIN: ", env("PYTHONANYWHERE_DOMAIN"))
-    environ.Env.read_env(os.path.join("~/", ".env"))
+    environ.Env.read_env(os.path.join("../", ".env"))
 else:
     print("PYTHONANYWHERE_DOMAIN: ", None)
     environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
