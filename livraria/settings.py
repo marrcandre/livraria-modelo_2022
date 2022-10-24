@@ -11,7 +11,7 @@ environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
 
 if os.getenv("PYTHONANYWHERE_DOMAIN"):
     print("PYTHONANYWHERE_DOMAIN: ", env("PYTHONANYWHERE_DOMAIN"))
-    environ.Env.read_env(os.path.join("../", ".env"))
+    environ.Env.read_env("/home/marcoandre/marcoandre.pythonanywhere.com/.env")
 else:
     print("PYTHONANYWHERE_DOMAIN: ", None)
     environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
@@ -131,4 +131,3 @@ MEDIA_URL = "http://localhost:8000/media/"
 MEDIA_ENDPOINT = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media_files/")
 FILE_UPLOAD_PERMISSIONS = 0o640
-
