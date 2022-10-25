@@ -9,12 +9,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
 
-if os.getenv("PYTHONANYWHERE_DOMAIN"):
-    print("PYTHONANYWHERE_DOMAIN: ", env("PYTHONANYWHERE_DOMAIN"))
-    environ.Env.read_env("/home/marcoandre/marcoandre.pythonanywhere.com/.env")
-else:
-    print("PYTHONANYWHERE_DOMAIN: ", None)
-    environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
+# if os.getenv("PYTHONANYWHERE_DOMAIN"):
+#     print("PYTHONANYWHERE_DOMAIN: ", env("PYTHONANYWHERE_DOMAIN"))
+#     environ.Env.read_env("/home/marcoandre/marcoandre.pythonanywhere.com/.env")
+# else:
+#     print("PYTHONANYWHERE_DOMAIN: ", None)
+#     environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
 
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG")
