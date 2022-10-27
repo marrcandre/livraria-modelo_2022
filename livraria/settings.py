@@ -12,6 +12,7 @@ environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG")
 ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(",")
+MEDIA_URL = env("MEDIA_URL")
 DATABASES = {"default": env.db()}
 
 # Application definition
@@ -26,7 +27,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
     "drf_spectacular",
-    "media",
+    "uploader",
     "core",
 ]
 
@@ -115,7 +116,6 @@ SPECTACULAR_SETTINGS = {
 AUTH_USER_MODEL = "core.Usuario"
 
 # Configurações do app media
-MEDIA_URL = "http://localhost:8000/media/"
 MEDIA_ENDPOINT = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media_files/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 FILE_UPLOAD_PERMISSIONS = 0o640

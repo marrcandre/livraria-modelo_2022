@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from media.models import Image
+from uploader.models import Image
 
 class Usuario(AbstractUser):
     cpf = models.CharField(max_length=11, blank=True, null=True, unique=True)
