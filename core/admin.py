@@ -59,6 +59,7 @@ class UsuarioAdmin(UserAdmin):
                 "fields": (
                     "first_name",
                     "last_name",
+                    "foto",
                     "email",
                     "cpf",
                     "telefone",
