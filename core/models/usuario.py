@@ -3,6 +3,7 @@ from django.db import models
 
 from uploader.models import Image
 
+
 class Usuario(AbstractUser):
     cpf = models.CharField(max_length=11, blank=True, null=True, unique=True)
     telefone = models.CharField(max_length=11, blank=True, null=True, unique=True)

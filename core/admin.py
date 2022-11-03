@@ -1,9 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
-# from faker import Faker
 
 from core.models import Autor, Categoria, Editora, Livro, Usuario
+
+# from faker import Faker
+
 
 
 @admin.register(Autor)

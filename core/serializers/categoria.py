@@ -1,6 +1,7 @@
 from rest_framework.serializers import ModelSerializer, RelatedField
 
 from core.models import Categoria
+
 # from core.serializers import LivroSerializer
 
 
