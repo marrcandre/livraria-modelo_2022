@@ -2,10 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
 
-from core.models import Autor, Categoria, Editora, Livro, Usuario
-
-# from faker import Faker
-
+from core.models import Autor, Categoria, Compra, Editora, Livro, Usuario
 
 
 @admin.register(Autor)
@@ -14,17 +11,7 @@ class AutorAdmin(admin.ModelAdmin):
     search_fields = ("nome", "email")
     list_filter = ("nome",)
     ordering = ("nome", "email")
-    actions = ['gerar_autores']
 
-    # def gerar_autores(self, request, queryset):
-    #     faker = Faker()
-    #     for _ in range(10):
-    #         Autor.objects.create(
-    #             nome=faker.name(),
-    #             email=faker.email(),
-    #         )
-    #     self.message_user(request, 'Autores gerados com sucesso!')
-    # gerar_autores.short_description = 'Gerar autores'
 
 @admin.register(Categoria)
 class CategoriaAdmin(admin.ModelAdmin):
@@ -32,6 +19,14 @@ class CategoriaAdmin(admin.ModelAdmin):
     search_fields = ("descricao",)
     list_filter = ("descricao",)
     ordering = ("descricao",)
+
+
+@admin.register(Compra)
+class CompraAdmin(admin.ModelAdmin):
+    list_display = ("usuario", "status")
+    search_fields = ("usuario", "status")
+    list_filter = ("usuario", "status")
+    ordering = ("usuario", "status")
 
 
 @admin.register(Editora)
