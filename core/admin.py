@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
 
-from core.models import Autor, Categoria, Compra, Editora, Livro, Usuario
+from core.models import Autor, Categoria, Compra, Editora, Livro, ItensCompra, Usuario
 
 
 @admin.register(Autor)
@@ -21,12 +21,17 @@ class CategoriaAdmin(admin.ModelAdmin):
     ordering = ("descricao",)
 
 
+class ItensInline(admin.TabularInline):
+    model = ItensCompra
+
+
 @admin.register(Compra)
 class CompraAdmin(admin.ModelAdmin):
     list_display = ("usuario", "status")
     search_fields = ("usuario", "status")
     list_filter = ("usuario", "status")
     ordering = ("usuario", "status")
+    inlines = [ItensInline]
 
 
 @admin.register(Editora)
