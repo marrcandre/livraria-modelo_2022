@@ -1,8 +1,7 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
 
-from core.models import Autor, Categoria, Compra, Editora, Livro, ItensCompra, Usuario
+from core.models import Autor, Categoria, Compra, Editora, Livro, ItensCompra
 
 
 @admin.register(Autor)
@@ -50,36 +49,3 @@ class LivroAdmin(admin.ModelAdmin):
     ordering = ("titulo", "editora", "categoria")
     list_per_page = 25
 
-
-@admin.register(Usuario)
-class UsuarioAdmin(UserAdmin):
-    fieldsets = (
-        (None, {"fields": ("username", "password")}),
-        (
-            _("Personal info"),
-            {
-                "fields": (
-                    "first_name",
-                    "last_name",
-                    "foto",
-                    "email",
-                    "cpf",
-                    "telefone",
-                    "data_nascimento",
-                )
-            },
-        ),
-        (
-            _("Permissions"),
-            {
-                "fields": (
-                    "is_active",
-                    "is_staff",
-                    "is_superuser",
-                    "groups",
-                    "user_permissions",
-                ),
-            },
-        ),
-        (_("Important dates"), {"fields": ("last_login", "date_joined")}),
-    )

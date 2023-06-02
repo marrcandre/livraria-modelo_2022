@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "drf_spectacular",
     "uploader",
+    "usuario",
     "core",
 ]
 
@@ -114,7 +115,7 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "1.0.0",
 }
 
-AUTH_USER_MODEL = "core.Usuario"
+AUTH_USER_MODEL = "usuario.Usuario"
 
 # Configurações do app media
 MEDIA_ENDPOINT = "/media/"
