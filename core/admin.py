@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 
-from core.models import Autor, Categoria, Compra, Editora, Livro, ItensCompra
+from core.models import Autor, Categoria, Compra, Editora, ItensCompra, Livro
 
 
 @admin.register(Autor)
@@ -48,4 +48,3 @@ class LivroAdmin(admin.ModelAdmin):
     list_filter = ("editora", "categoria")
     ordering = ("titulo", "editora", "categoria")
     list_per_page = 25
-

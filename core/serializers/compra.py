@@ -1,4 +1,4 @@
-from rest_framework.serializers import ModelSerializer, CharField, SerializerMethodField
+from rest_framework.serializers import CharField, ModelSerializer, SerializerMethodField
 
 from core.models import Compra, ItensCompra
 

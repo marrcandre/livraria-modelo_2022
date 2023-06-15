@@ -9,7 +9,6 @@ import uploader.models.image
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = []
